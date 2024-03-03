@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { FaPlus, FaMinus } from 'react-icons/fa';
 import MenuList from './MenuList';
 
 function MenuItem({ item }) {
@@ -12,7 +13,7 @@ function MenuItem({ item }) {
     });
   }
 
-  console.log(displayCurrentChildren);
+  // console.log(displayCurrentChildren);
 
   return (
     <li>
@@ -21,7 +22,7 @@ function MenuItem({ item }) {
         {item && item.children && item.children.length > 0 ? (
           <span onClick={() => handleToggleChildren(item.label)}>
             {' '}
-            {displayCurrentChildren[item.label] ? '-' : '+'}{' '}
+            {displayCurrentChildren[item.label] ? <FaMinus /> : <FaPlus />}{' '}
           </span>
         ) : null}
       </div>

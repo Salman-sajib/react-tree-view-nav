@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import { nanoid } from 'nanoid';
 import MenuItem from './MenuItem';
 
