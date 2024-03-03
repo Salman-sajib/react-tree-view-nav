@@ -1,7 +1,10 @@
+import menus from './Data/data';
+import TreeView from './components/TreeView';
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <TreeView menus={menus} />
     </div>
   );
 }
