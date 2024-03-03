@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.tree-view-container {
+  min-height: 100dvh;
+  width: 350px;
+  background-color: rgb(0, 71, 110);
+  padding-top: 1rem;
+}
+
+.menu-list-container {
+  list-style: none;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  color: #fff;
+}
